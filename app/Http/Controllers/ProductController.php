@@ -19,6 +19,7 @@ class ProductController extends Controller
          $this->middleware('permission:product-edit', ['only' => ['edit','update']]);
          $this->middleware('permission:product-delete', ['only' => ['destroy']]);
     }
+    
     /**
      * Display a listing of the resource.
      *
